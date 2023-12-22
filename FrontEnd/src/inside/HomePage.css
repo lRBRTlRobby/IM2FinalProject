@@ -1,0 +1,78 @@
+body{
+    background: url('https://www.herofincorp.com/public/admin_assets/upload/blog/64b91a06ab1c8_food%20business%20ideas.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* 0.5 is the opacity value, you can adjust it */
+    z-index: -1; /* Place it behind the background image */
+}
+.homepage{
+    /* height: 80vh; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    margin-top: 30px;
+    padding-top: 20px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* background-color: red; */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.418);
+    padding-left: 50px;
+}
+.title{
+    font-size: 100px;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 100px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+}
+.description{
+    text-wrap: wrap;
+    width: 460px;
+    padding: 0px;
+    padding-left: 5px;
+    margin: 0px;
+    font-weight: 300;
+    text-align: justify;
+    cursor: pointer;
+}
+.title:hover, .description:hover{
+    scale: 1.2;
+    transition: 0.4s;
+}
+.title:not(:hover), .description:not(:hover){
+    transition: 0.4s;
+}
+.homepicture{
+    margin-left: 30px;
+    width: 550px;
+}
+.homepicture:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    -moz-transform: scale(1.1) translate(-30px, 0px);
+    -webkit-transform: scale(1.1) translate(-30px, 0px);
+    -o-transform: scale(1.1) translate(-30px, 0px);
+    -ms-transform: scale(1.1) translate(-30px, 0px);
+    transform: scale(1.1) translate(-30px, 0px);
+}
+.homepicture:not(:hover){
+    transition: 0.5s;
+}

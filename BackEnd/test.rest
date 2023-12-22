@@ -1,0 +1,160 @@
+@host = http://127.0.0.1:5000
+
+# USERS ------------------------------------ USERS
+
+### Create new user
+POST {{host}}/users
+Content-Type: application/json
+
+{
+    "firstname": "Jee",
+    "lastname": "Doo",
+    "email": "jeedoo@gmail.com",
+    "password": "jd123"
+}
+
+### Read the lists of all the users
+GET {{host}}/users
+Content-Type: application/json
+
+### Read  a single user by id
+GET {{host}}/users/1
+Content-Type: application/json
+ 
+### Update a user
+PUT {{host}}/users/1
+Content-Type: application/json
+
+{
+    "firstname": "Ludi",
+    "lastname": "Balatero",
+    "email": "ludi@gmail.com",
+    "password": "123"
+}
+
+### Delete a user
+DELETE {{host}}/users/3
+Content-Type: : application/json
+
+# USERS ------------------------------------ USERS
+
+
+# RECIPE ------------------------------------ RECIPE
+
+### Create a new recipe
+POST {{host}}/recipes
+Content-Type: application/json
+
+{
+    "user_id": 2,
+    "category": "Chicken",
+    "Title": "Lasagna",
+    "Description": "A classic dish",
+    "CookingTime": 30,
+    "Servings": 4,
+    "ImgSrc": "http://example.com/spaghetti.jpg"
+}
+
+### Get All Recipes
+GET  {{host}}/recipes
+Content-Type: application/json
+
+### Get Recipe by recipeid
+GET {{host}}/recipes/1
+Content-Type: application/json
+
+### Get all Recipe of a user
+GET {{host}}/recipes/user/4
+Content-Type: application/json
+
+### Update a Recipe
+PUT {{host}}/recipes/1
+Content-Type: application/json
+
+{
+    "user_id": 2,
+    "category": "ChickenUpdate",
+    "Title": "LasagnaUpdate",
+    "Description": "A classic dishUpdate",
+    "CookingTime": 30,
+    "Servings": 4,
+    "ImgSrc": "http://example.com/spaghetti.jpg"
+}
+
+### Delete a recipe
+DELETE {{host}}/recipes/2
+Content-Type: : application/json
+
+### Delete a recipe
+DELETE {{host}}/recipes/delete/12
+Content-Type: : application/json
+
+# RECIPE ------------------------------------ RECIPE
+
+
+# INGREDIENT ------------------------------------ INGREDIENT
+
+### Post or Insert an ingredient
+POST {{host}}/recipe/ingredients
+Content-Type: application/json
+
+{
+    "recipeid": 12,
+    "name": "tomatoeee",
+    "quantity": 3,
+    "measurement": "piece"
+}
+
+### Get all ingredients of a recipe
+GET {{host}}/recipes/ingredients/12
+Content-Type: application/json
+
+### Update an Ingredient
+PUT {{host}}/recipes/ingredients/2
+Content-Type: application/json
+
+{
+    "recipe_id": 12,
+    "name": "baconUpdateNasda",
+    "quantity": 2,
+    "measurement": "piece"
+}
+
+### Delete an ingredient
+DELETE {{host}}/ingredients/10
+Content-Type: : application/json
+
+# INGREDIENT ------------------------------------ INGREDIENT
+
+
+# INSTRUCTION ------------------------------------ INSTRUCTION
+
+### Post or Insert an instruction
+POST {{host}}/recipe/instructions
+Content-Type: application/json
+
+{
+    "recipeid": 12,
+    "stepnum": 2,
+    "description": "bag o ini."
+}
+
+### Get all instructions of a recipe
+GET {{host}}/recipes/instructions/12
+Content-Type: application/json
+
+### Update an Instruction
+PUT {{host}}/recipes/instructions/2
+Content-Type: application/json
+
+{
+    "recipe_id": 1,
+    "stepnum": 1,
+    "description": "huwata mo humok ang baka, usa kwaa updated version."
+}
+
+### Delete an instruction
+DELETE {{host}}/instructions/17
+Content-Type: : application/json
+
+# INSTRUCTION ------------------------------------ INSTRUCTION

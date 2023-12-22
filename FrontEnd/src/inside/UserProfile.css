@@ -1,0 +1,53 @@
+.userprofile-wrapper{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    /* display: flex; */
+    text-align: center;
+}
+.info-box{
+    text-align: center;
+    height: 40px;
+}
+.userprofile-container{
+    margin-top: 20px;
+    background-color: rgba(3, 31, 3, 0.652);
+    color: white;
+    border-radius: 10px;
+    width: 500px;
+    padding: 20px;
+}
+.userprofile-title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #e6b800;
+    font-style: italic;
+}
+.userprofile-changebtn{
+    width: 20px;
+    position: absolute;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: -25px;
+}
+.savebtn{
+    width: 100px;
+    padding: 9px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #2c275a;
+    color: white;
+    border: none;
+}
+.savebtn:hover{
+    width: 200px;
+    transition: 0.2s;
+    background-color: #342e70;
+}
+.savebtn:not(:hover){
+    transition: 0.5s;
+}

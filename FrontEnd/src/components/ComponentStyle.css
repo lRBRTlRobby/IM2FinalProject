@@ -1,0 +1,49 @@
+.body{
+    background-color: #FFF9EC;
+}
+.viewbtn{
+    border: none;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #231F47;
+    color: white;
+    border-radius: 15px;
+}
+.viewbtn:hover{
+    background-color: rgb(38, 38, 143);
+    color: white;
+    transition: 0.3s;
+    width: 150px;
+
+}
+.applogo{
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.viewbtn:not(:hover){
+    transition: 0.5s;
+}
+.deletebtn{
+    color: rgba(0, 0, 0, 0.373);
+    float: right;
+    cursor: pointer;
+    margin: 5px;
+    border: none;
+    background-color: #231f4700;
+}
+.deletebtn:hover{
+    color: red;
+    transition: 0.3s;
+    scale: 1.5;
+}
+.deletebtn:not(:hover){
+    transition: 0.5s;
+}
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav-link{
+    color: white;
+}

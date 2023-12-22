@@ -1,0 +1,71 @@
+.insertinstruction-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 50vh; */
+}
+.insertinstruction-title{
+    font-size: 40px;
+    text-align: center;
+    color: #e6b800;
+    font-style: italic;
+}
+.insertinstruction-mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.insertinstruction-form-container{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #00663dbe;
+    color: white;
+    -webkit-box-shadow: -1px 8px 15px 5px rgba(0,0,0,0.51);
+    box-shadow: -1px 8px 15px 5px rgba(0,0,0,0.51);
+}
+.insertinstruction-input{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    font-size: 35px;
+    text-align: center;
+    text-wrap: wrap;
+}
+.insertinstruction-inputt{
+    min-width: 500px;
+    max-width: 500px;
+    min-height: 50px;
+    padding: 10px;
+    font-size: 20px;
+    text-wrap: wrap;
+}
+.insertinstruction-line{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 20px;
+}
+.insertinstruction-hr{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.insertinstruction-button{
+    width: 120px;
+    height: 50px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: #231F47;
+    color: white;
+}
+.insertinstruction-button:hover{
+    width: 200px;
+    transition: 0.2s;
+}
+.insertinstruction-button:not(:hover){
+    transition: 0.5s;
+}
