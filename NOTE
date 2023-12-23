@@ -6,7 +6,7 @@ To Execute the Backend:
 3. Paste and execute the following command: 'python -m flask run --debug'.
 
 
-To Execute the FrontEnd:
+To Execute the FrontEnd (We used React JS):
 
 1. Open the terminal / Open a split terminal.
 2. Change the current directory to the "FrontEnd" directory using the following command: 'cd FrontEnd'.
