@@ -1,0 +1,15 @@
+<!-- 
+To Execute the Backend:
+
+1. Open the terminal.
+2. Change the current directory to the "BackEnd" directory using the following command: 'cd BackEnd'.
+3. Paste and execute the following command: 'python -m flask run --debug'.
+
+
+To Execute the FrontEnd:
+
+1. Open the terminal / Open a split terminal.
+2. Change the current directory to the "FrontEnd" directory using the following command: 'cd FrontEnd'.
+3. Paste and execute the following command: 'npm install'.
+4. Paste and execute the following command: 'npm start'. 
+-->
