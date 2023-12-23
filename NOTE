@@ -1,5 +1,5 @@
 <!-- 
-To Execute the Backend:
+To Execute the Backend (We used Flask):
 
 1. Open the terminal.
 2. Change the current directory to the "BackEnd" directory using the following command: 'cd BackEnd'.
